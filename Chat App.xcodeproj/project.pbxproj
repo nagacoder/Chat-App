@@ -54,14 +54,46 @@
 		D8CA0D3222D862760091BFD7 /* Chat App */ = {
 			isa = PBXGroup;
 			children = (
-				D8CA0D3322D862760091BFD7 /* AppDelegate.swift */,
-				D8CA0D3522D862760091BFD7 /* ViewController.swift */,
-				D8CA0D3722D862760091BFD7 /* Main.storyboard */,
+				D8CA0D4B22D8AD340091BFD7 /* Model */,
+				D8CA0D4E22D8ADE60091BFD7 /* View */,
+				D8CA0D4D22D8AD7A0091BFD7 /* Controller */,
 				D8CA0D3A22D862780091BFD7 /* Assets.xcassets */,
-				D8CA0D3C22D862780091BFD7 /* LaunchScreen.storyboard */,
-				D8CA0D3F22D862780091BFD7 /* Info.plist */,
+				D8CA0D5022D8AFE10091BFD7 /* Supporting Files */,
 			);
 			path = "Chat App";
+			sourceTree = "<group>";
+		};
+		D8CA0D4B22D8AD340091BFD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8CA0D4D22D8AD7A0091BFD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA0D3522D862760091BFD7 /* ViewController.swift */,
+				D8CA0D3322D862760091BFD7 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D8CA0D4E22D8ADE60091BFD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA0D3C22D862780091BFD7 /* LaunchScreen.storyboard */,
+				D8CA0D3722D862760091BFD7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8CA0D5022D8AFE10091BFD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8CA0D3F22D862780091BFD7 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
