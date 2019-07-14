@@ -8,15 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WellcomeViewController: UIViewController {
 
-    @IBOutlet weak var LoginBtn: UIButton!
+    //    @IBOutlet weak var LoginButton: UIButton!
+//    @IBOutlet weak var RegisterButton: UIButton!
+//    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        LoginBtn.backgroundColor = UIColor.red
+//        LoginButton.layer.cornerRadius=25
+//        RegisterButton.layer.cornerRadius=25
     }
 
 
 }
-
