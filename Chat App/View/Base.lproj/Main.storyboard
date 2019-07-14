@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lnu-yz-ESe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S54-dc-y3c">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,6 +31,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.034797125838220512" green="0.085944827296142168" blue="0.10122541243654826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="tp6-W7-C28" kind="push" identifier="goToLogin" id="e2o-Ka-WWv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5o-rZ-wUG">
                                 <rect key="frame" x="20" y="781" width="374" height="54"/>
@@ -41,11 +44,15 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.3658193210659898" green="0.3658193210659898" blue="0.3658193210659898" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="lnu-yz-ESe" kind="push" identifier="goToRegister" id="ITi-nm-N6k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Wellcome" id="d8P-si-Rxg"/>
                     <connections>
                         <outlet property="LoginButton" destination="JQ0-dz-hRh" id="xEj-Hp-svc"/>
                         <outlet property="RegisterButton" destination="Y5o-rZ-wUG" id="9Ek-64-gBi"/>
@@ -53,7 +60,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="129"/>
+            <point key="canvasLocation" x="839.13043478260875" y="128.57142857142856"/>
         </scene>
         <!--Login-->
         <scene sceneID="Yhq-Ek-xE3">
@@ -98,6 +105,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="cOB-q3-Qcx"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" largeTitleDisplayMode="always" id="bf7-SG-jKg" userLabel="Login">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2UL-UR-hyC"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="LoginField" destination="pAF-pv-7Of" id="yMr-RZ-29b"/>
                         <outlet property="Password" destination="aik-Iw-TWw" id="cqa-WS-2if"/>
@@ -106,7 +116,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTz-zI-3Zu" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606" y="123"/>
+            <point key="canvasLocation" x="1649" y="834"/>
         </scene>
         <!--Register-->
         <scene sceneID="90O-Sb-w7W">
@@ -151,15 +161,36 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Fgt-AL-AZ8"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Register" leftItemsSupplementBackButton="YES" id="Kag-Dt-EhB">
+                        <barButtonItem key="backBarButtonItem" title="back" id="OCk-02-B1z"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="RegisterButton" destination="0jN-ds-FBP" id="1cf-hJ-XDH"/>
                         <outlet property="emailField" destination="Eb3-Ev-AIW" id="Fuy-u3-pkl"/>
                         <outlet property="passWordField" destination="yEB-da-2cX" id="kZz-tC-QO5"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gup-JT-7vI" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gup-JT-7vI" userLabel="Register" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="123"/>
+            <point key="canvasLocation" x="1648" y="-273"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IhE-eS-DvC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S54-dc-y3c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uvF-jN-bn5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tHZ-fe-NMB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTn-mT-qlk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.014492753623188" y="128.57142857142856"/>
         </scene>
     </scenes>
     <resources>

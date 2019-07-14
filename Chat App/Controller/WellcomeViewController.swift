@@ -10,15 +10,15 @@ import UIKit
 
 class WellcomeViewController: UIViewController {
 
-    //    @IBOutlet weak var LoginButton: UIButton!
-//    @IBOutlet weak var RegisterButton: UIButton!
-//    
+        @IBOutlet weak var LoginButton: UIButton!
+    @IBOutlet weak var RegisterButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        LoginButton.layer.cornerRadius=25
-//        RegisterButton.layer.cornerRadius=25
+        LoginButton.layer.cornerRadius=25
+        RegisterButton.layer.cornerRadius=25
     }
 
 
