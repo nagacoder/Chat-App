@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
     
@@ -22,5 +23,18 @@ class RegisterViewController: UIViewController {
         RegisterButton.layer.cornerRadius = 25
     }
     
+    @IBAction func regiter(_ sender: Any) {
+//        print(emailField.text!,passWordField.text!)
+        Auth.auth().createUser(withEmail: emailField.text!, password: passWordField.text!) { (user, error) in
+            if error != nil {
+                print("somthing wrong")
+
+            }else{
+                print("klik")
+                self.performSegue(withIdentifier: "goToLogin", sender: self)
+            }
+        }
+        
+    }
     
 }

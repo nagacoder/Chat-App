@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var Password: PaddingTextField!
@@ -23,5 +23,15 @@ class LoginViewController: UIViewController {
         loginBtn.layer.cornerRadius=25
     }
     
+    @IBAction func login(_ sender: Any) {
+        Auth.auth().signIn(withEmail: LoginField.text!, password: Password.text!) { (user, error) in
+            if error != nil {
+                print("error")
+            }
+            else{
+                self.performSegue(withIdentifier: "home", sender: self)
+            }
+        }
+    }
     
 }

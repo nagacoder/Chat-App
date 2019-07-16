@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C3797D0152BDAACB49A64D28 /* Pods_Chat_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949127BDC008D4A5B29F0265 /* Pods_Chat_App.framework */; };
 		D86BD70A22DA19A700D0BF88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86BD70922DA19A700D0BF88 /* LoginViewController.swift */; };
+		D891F11D22DE12FC00684A23 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D891F11C22DE12FB00684A23 /* GoogleService-Info.plist */; };
+		D891F11F22DE201100684A23 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D891F11E22DE201100684A23 /* HomeViewController.swift */; };
 		D8A006C422DB4AC20096ACD4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A006C322DB4AC20096ACD4 /* RegisterViewController.swift */; };
 		D8CA0D3422D862760091BFD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA0D3322D862760091BFD7 /* AppDelegate.swift */; };
 		D8CA0D3622D862760091BFD7 /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CA0D3522D862760091BFD7 /* WellcomeViewController.swift */; };
@@ -23,6 +25,8 @@
 		8D0D404C9AE21D055B620FEE /* Pods-Chat App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat App.release.xcconfig"; path = "Target Support Files/Pods-Chat App/Pods-Chat App.release.xcconfig"; sourceTree = "<group>"; };
 		949127BDC008D4A5B29F0265 /* Pods_Chat_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86BD70922DA19A700D0BF88 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D891F11C22DE12FB00684A23 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D891F11E22DE201100684A23 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8A006C322DB4AC20096ACD4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D8CA0D3022D862760091BFD7 /* Chat App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chat App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CA0D3322D862760091BFD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +64,6 @@
 				474F19BA011659D9F89A50C9 /* Pods-Chat App.debug.xcconfig */,
 				8D0D404C9AE21D055B620FEE /* Pods-Chat App.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -109,6 +112,7 @@
 				D8CA0D3322D862760091BFD7 /* AppDelegate.swift */,
 				D86BD70922DA19A700D0BF88 /* LoginViewController.swift */,
 				D8A006C322DB4AC20096ACD4 /* RegisterViewController.swift */,
+				D891F11E22DE201100684A23 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				D8CA0D3F22D862780091BFD7 /* Info.plist */,
+				D891F11C22DE12FB00684A23 /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8CA0D3E22D862780091BFD7 /* LaunchScreen.storyboard in Resources */,
+				D891F11D22DE12FC00684A23 /* GoogleService-Info.plist in Resources */,
 				D8CA0D3B22D862780091BFD7 /* Assets.xcassets in Resources */,
 				D8CA0D3922D862760091BFD7 /* Main.storyboard in Resources */,
 			);
@@ -273,6 +279,7 @@
 				D8E1EE7822DAE55F00C4587B /* PaddingTextField.swift in Sources */,
 				D8CA0D3622D862760091BFD7 /* WellcomeViewController.swift in Sources */,
 				D8CA0D3422D862760091BFD7 /* AppDelegate.swift in Sources */,
+				D891F11F22DE201100684A23 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

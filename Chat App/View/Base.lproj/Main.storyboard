@@ -32,7 +32,10 @@
                                     <color key="titleColor" red="0.034797125838220512" green="0.085944827296142168" blue="0.10122541243654826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tp6-W7-C28" kind="push" identifier="goToLogin" id="e2o-Ka-WWv"/>
+                                    <segue destination="tp6-W7-C28" kind="presentation" identifier="goToLogin" id="bo5-Pm-ara">
+                                        <segue key="commit" inheritsFrom="parent" id="SkZ-9Z-xn5"/>
+                                        <segue key="preview" inheritsFrom="commit" id="svh-vp-2i0"/>
+                                    </segue>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5o-rZ-wUG">
@@ -100,6 +103,13 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.364662766456604" green="0.36473065614700317" blue="0.36465850472450256" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="tp6-W7-C28" eventType="touchUpInside" id="P3i-MV-MVW"/>
+                                    <segue destination="z2m-U6-Hyh" kind="show" identifier="home" id="8Lq-m6-HrJ">
+                                        <segue key="commit" inheritsFrom="parent" id="ef4-pR-CaN"/>
+                                        <segue key="preview" inheritsFrom="commit" id="bZ1-C5-cQG"/>
+                                    </segue>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -116,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uTz-zI-3Zu" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649" y="834"/>
+            <point key="canvasLocation" x="1681" y="788"/>
         </scene>
         <!--Register-->
         <scene sceneID="90O-Sb-w7W">
@@ -156,6 +166,9 @@
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.36466276650000001" green="0.36473065609999999" blue="0.3646585047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="regiter:" destination="lnu-yz-ESe" eventType="touchUpInside" id="DnT-q6-8o7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -192,8 +205,39 @@
             </objects>
             <point key="canvasLocation" x="-71.014492753623188" y="128.57142857142856"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="HZY-Tt-4QN">
+            <objects>
+                <viewController title="Home" id="z2m-U6-Hyh" customClass="HomeViewController" customModule="Chat_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="99U-Yg-AsX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello Selamat Datang" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="StX-nn-VGS">
+                                <rect key="frame" x="122" y="426" width="203" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lsE-R2-bYT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" largeTitleDisplayMode="always" id="zrp-FE-Qfx" userLabel="Login">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="9t0-Q9-pLb"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyq-Cd-uKb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2627.536231884058" y="235.71428571428569"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="668" height="1002"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Lq-m6-HrJ"/>
+        <segue reference="bo5-Pm-ara"/>
+    </inferredMetricsTieBreakers>
 </document>
